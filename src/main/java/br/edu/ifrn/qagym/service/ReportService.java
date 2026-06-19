@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class ReportService {
 
-    public int total(List<Book> books) {
+    public int getTotalBooksCount(List<Book> books) {
         return books.size();
     }
 
@@ -22,7 +22,7 @@ public class ReportService {
         return 0;
     }
 
-    public Map<String, Long> booksByAuthor(List<Book> books) {
+    public Map<String, Long> getBooksByAuthor(List<Book> books) {
         // TODO: retornar mapa de autor -> quantidade de livros
         return Map.of();
     }

@@ -23,11 +23,11 @@ class ReportServiceTest {
             new Book("ISBN-1", "Livro A", "Autor A", 2000),
             new Book("ISBN-2", "Livro B", "Autor B", 2001)
         );
-        assertThat(reportService.total(books)).isEqualTo(2);
+        assertThat(reportService.getTotalBooksCount(books)).isEqualTo(2);
     }
 
     @Test
     void deveRetornarZeroParaListaVazia() {
-        assertThat(reportService.total(List.of())).isEqualTo(0);
+        assertThat(reportService.getTotalBooksCount(List.of())).isEqualTo(0);
     }
 }
